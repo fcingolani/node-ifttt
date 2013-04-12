@@ -25,7 +25,7 @@ $ curl http://127.0.0.1:3000/
 
   api = ifttt(config);
 
-  api.on('do_something', function(data) {
+  api.on('save_post', function(data) {
     return store.push(data);
   });
 
