@@ -20,7 +20,6 @@
   "author": "Federico Cingolani <mail@fcingolani.com.ar>",
   "license": "BSD",
   "dependencies": {
-    "connect" : ">= 1.0.0",
     "xmlrpc" : "*"
   }
 }
