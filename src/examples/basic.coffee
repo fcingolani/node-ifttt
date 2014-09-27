@@ -6,20 +6,22 @@ $ node examples/basic.js
 $ node examples/call.js
 
 3) Check the results
-$ curl http://127.0.0.1:3000/
+$ curl http://127.0.0.1:3001/
 ###
 
 config  = require './config'
 connect = require 'connect'
-ifttt   = require '../index'
+ifttt   = require '../lib/index'
 
 store = []
 
 api = ifttt(config)
-api.on 'do_something', (data) ->
+api.on 'save_post', (data) ->
+  console.log("received data", data)
   store.push data
 
 app = (req, res)->
+  console.log("serve received data")
   res.end JSON.stringify store
 
 server = connect()
