@@ -1,5 +1,5 @@
 {
-  "name": "ifttt",
+  "name": "node-ifttt",
   "version": "0.0.1",
   "description": "Create your own IFTTT Actions with node.js",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fcingolani/node-ifttt.git"
+    "url": "git@github.com:baswenneker/node-ifttt.git"
   },
   "keywords": [
     "connect",
@@ -17,9 +17,12 @@
     "ifttt"
   ],
   "main": "./lib/index.js",
-  "author": "Federico Cingolani <mail@fcingolani.com.ar>",
+  "author": "Bas Wenneker <b.wenneker@gmail.com",
+  "origAuthor": "Federico Cingolani <mail@fcingolani.com.ar>",
   "license": "BSD",
   "dependencies": {
-    "xmlrpc" : "*"
+    "xmlrpc": "*",
+    "connect": "*",
+    "crypto": "*"
   }
 }
